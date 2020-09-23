@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #f7f6f4;
+}
+
+header {
+    padding: 20px 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+    justify-content: space-between;
+}
+
+.sub-container {
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.flex-box {
+    display: flex;
+}
+
+h1 {
+    
+    align-self: center;
+}
+
+h2 {
+    font-family: 'Manrope-Bold';
+    font-size: 45px;
+}
+
+h4 {
+    font-family: 'Manrope-Bold'
+}
+
+h5 {
+    font-size: 20px;
+    font-family: 'Manrope-Bold';
+}
+
+h6 {
+    font-size: 14px;
+    font-family: 'Manrope-Medium';
+    margin: 0 auto;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: -25px;
+}
+
+
+p {
+    font-family: 'Manrope-Medium';
+    padding: 20px 0px
+}
+
+.button-one {
+    background-color: #709d61;
+    border: none;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Manrope-Bold'
+}
+
+.button-two {
+    border-style: solid;
+    background-color: #ffffff;
+    border-color: #709d61;
+    color: #709d61;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Manrope-Bold'
+}
+
+.button-in {
+    margin: 0 auto;
+}
+
+.header-one {
+    font-size: 35px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 16px;
+    padding: 5px;
+}
+nav a {
+    font-family: 'Manrope-Medium';
+    color: #000000;
+    text-decoration: none;
+}
+ul a{
+    text-decoration: none;
+    color: #000000;
+    justify-content: space-between;
+}
+.item-1 {
+    flex: 0 50%;
+
+    margin-bottom: 2%; 
+}
+
+.item-2 {
+    flex: 1 100%;
+}
+
+.item-3 {
+    flex: 1 32%;
+    margin-bottom: 2%; 
+    text-align: center;
+}
+
+.item-4 {
+    flex: 1 32%;
+    flex-grow: 0;
+    margin-bottom: 2%; 
+}
+
+.item-5 {
+    flex: 0 40%
+}
+
+.image-one {
+    width: 100%;
+}
+
+.image-two{
+    border-radius: 50%;
+    background: #f0f1ec;
+    padding: 10px;
+}
+
+.image-three {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.image-four {
+    width: 40px;
+    background: #719d61;
+    padding: 5px;
+    border-radius: 50%;
+    height: 36px;
+}
+
+.image-five {
+    border-radius: 10px;
+}
+
+.offer-text{
+    color: gray;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.about-text{
+    color: #709d61;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.service-text {
+    color: #709d61;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.testimonial {
+    padding: 0px
+}
+
+hr {
+    opacity: 20%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+ .list-bold {
+    font-size: 18px;
+    font-family: 'Manrope-Bold';
+ }
+
+ input[type="text"] {
+    width: 500px;
+    height: 55px;
+    padding-right: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 40px 0px;
+}
+
+input[type="submit"] {
+    margin-left: -110px;
+    border-radius: 5px;
+    background-color: #709d61;
+    border: none;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Manrope-Bold';
+}
+
+.day-time {
+    display: flex;
+    justify-content: space-between;
+}
