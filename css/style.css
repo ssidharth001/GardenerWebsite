@@ -532,7 +532,7 @@ button {
 
 body {
     background-color: #f7f6f4;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 header {
@@ -732,26 +732,12 @@ hr {
     opacity: 20%;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-  
- .list-bold {
+.list-bold {
     font-size: 18px;
     font-family: 'Manrope-Bold';
  }
 
- input[type="text"] {
+input[type="text"] {
     width: 500px;
     height: 55px;
     font-family: 'Manrope-Medium';
@@ -760,6 +746,7 @@ hr {
     border: none;
     margin: 40px 0px;
     margin-top: 20px;
+    padding: 10px;
 }
 
 input[type="submit"] {
