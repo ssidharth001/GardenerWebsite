@@ -7,8 +7,8 @@
 /*------------------Layout,Table of Contents-----------------------------------------------------------------
 1. BASIC STYLING FOR COMMON HTML ELEMENTS
 2. TYPOS
-3. COMMON CSS CLASSES
-4. SKELETON
+3. FONTS
+4. COMMON CSS CLASSES
 5. HEADER SECTION
 6. BODY SECTION
 7. FOOTER SECTION
@@ -394,7 +394,7 @@ html input[disabled] {
  * 2. Remove excess padding in IE 8/9.
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
- */
+
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -402,7 +402,7 @@ input[type="radio"] {
   /*  padding: 0;  2 */
   /*height: 13px;  3 */
   /*width: 13px;  3 */
-}
+
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -503,429 +503,468 @@ button {
   padding-left: 33px;
   padding-right: 33px;
 }
-/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*............................................................................
+                              3. FONTS
+.............................................................................*/
 
 @font-face {
-    font-family: 'Manrope-Bold';
-    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
-        url('../fonts/Manrope-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Manrope-Bold";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Manrope-Medium';
-    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
-        url('../fonts/Manrope-Medium.woff') format('woff');
-    font-style: normal;
-    font-display: swap;
+  font-family: "Manrope-Medium";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"),
+    url("../fonts/Manrope-Medium.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
 }
-
+/*............................................................................
+                              4. COMMON CSS CLASSES
+.............................................................................*/
 * {
-    margin: 0;
-    padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: #f7f6f4;
-    line-height: 1.5;
-}
-
-header {
-    padding: 20px 0px;
+  background-color: #f7f6f4;
+  line-height: 1.5;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    flex-wrap: wrap;
-    margin-bottom: 45px;
-    justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  justify-content: space-between;
 }
 
 .sub-container {
-    max-width: 900px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .flex-box {
-    display: flex;
+  display: flex;
 }
 
 h1 {
-    color: #000000;
-    align-self: center;
+  color: #000000;
+  align-self: center;
 }
 
 h2 {
-    font-family: 'Manrope-Bold';
-    font-size: 45px;
-    color: #000000;
+  font-family: "Manrope-Bold";
+  font-size: 45px;
+  color: #000000;
 }
 
 h4 {
-    font-family: 'Manrope-Bold'
-    color: #000000;
+  font-family: "Manrope-Bold";
+  color: #000000;
 }
 
 h5 {
-    font-size: 20px;
-    font-family: 'Manrope-Bold';
-    color: #000000;
+  font-size: 20px;
+  font-family: "Manrope-Bold";
+  color: #000000;
 }
 
 h6 {
-    font-size: 14px;
-    font-family: 'Manrope-Medium';
-    margin: 0 auto;
-    font-weight: 200;
-    margin-top: 20px;
-    margin-bottom: -25px;
-
+  font-size: 14px;
+  font-family: "Manrope-Medium";
+  margin: 0 auto;
+  font-weight: 200;
+  margin-top: 20px;
 }
-
 
 p {
-    font-family: 'Manrope-Medium';
-    padding: 20px 0px
-}
-
-.button-one {
-    background-color: #709d61;
-    border: none;
-    color: #ffffff;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Manrope-Bold'
-}
-
-.button-two {
-    border-style: solid;
-    background-color: #ffffff;
-    border-color: #709d61;
-    color: #709d61;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Manrope-Bold'
-}
-
-.button-in {
-    margin: 0 auto;
-}
-
-.header-one {
-    font-size: 35px;
-    text-align: center;
+  font-family: "Manrope-Medium";
+  padding: 20px 0px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    font-size: 16px;
-    padding: 5px;
+  font-size: 16px;
+  padding: 5px;
 }
 nav a {
-    font-family: 'Manrope-Medium';
-    color: #000000;
-    text-decoration: none;
+  font-family: "Manrope-Medium";
+  color: #000000;
+  text-decoration: none;
 }
-ul a{
-    text-decoration: none;
-    color: #000000;
-    justify-content: space-between;
+ul a {
+  text-decoration: none;
+  color: #000000;
+  justify-content: space-between;
 }
-.item-1 {
-    flex: 0 50%;
+/*............................................................................
+                              5. HEADER SECTION
+.............................................................................*/
 
-    margin-bottom: 2%; 
-}
-
-.item-2 {
-    flex: 1 100%;
+header {
+  padding: 20px 0px;
 }
 
-.item-3 {
-    flex: 1 32%;
-    margin-bottom: 2%; 
-    text-align: center;
-}
-
-.item-4 {
-    flex: 1 32%;
-    flex-grow: 0;
-    margin-bottom: 2%; 
-}
-
-.item-5 {
-    flex: 0 40%;
-    padding: 10px;
-}
-
-.image-one {
-    width: 100%;
-}
-
-.image-two{
-    border-radius: 50%;
-    background: #f0f1ec;
-    padding: 10px;
-}
-
-.image-three {
-    width: 100%;
-    object-fit: cover;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.image-four {
-    width: 40px;
-    background: #719d61;
-    padding: 5px;
-    border-radius: 50%;
-    height: 36px;
-}
-
-.image-five {
-    border-radius: 10px;
-}
-
-.offer-text{
-    color:  #709d61;
-    text-align: center;
-    padding: 0;
-    padding-top: 20px;
-}
-
-.about-text{
-    color: #709d61;
-    padding: 0;
-    padding-top: 20px;
-}
-
-.service-text {
-    color: #709d61;
-    text-align: center;
-    padding: 0;
-    padding-top: 20px;
-}
-
-.testimonial {
-    padding: 10px
-}
-
-hr {
-    opacity: 20%;
-}
-
-.list-bold {
-    font-size: 18px;
-    font-family: 'Manrope-Bold';
- }
-
-input[type="text"] {
-    width: 500px;
-    height: 55px;
-    font-family: 'Manrope-Medium';
-    padding-right: 50px;
-    border-radius: 5px;
-    border: none;
-    margin: 40px 0px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-input[type="submit"] {
-    margin-left: -110px;
-    border-radius: 5px;
-    background-color: #709d61;
-    border: none;
-    color: #ffffff;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Manrope-Bold';
-}
-
-.day-time {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-main {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.footer-list {
-    font-family: 'Manrope-Medium';font-size: 16px;
-}
-.middle-text{
-    background-color: #f0f1ec;margin: 0 auto;
-}
-/* -----------------hamburger icon--------------------*/
+/* -----------------HAMBURGER ICON--------------------*/
 .nav-icon {
-    display: none;
-    margin: 1em;
-    width: 40px;
-  }
-  
-.nav-icon:after, 
-.nav-icon:before, 
+  display: none;
+  margin: 1em;
+  width: 40px;
+}
+
+.nav-icon:after,
+.nav-icon:before,
 .nav-icon div {
-background-color: #709d61;
-border-radius: 3px;
-content: '';
-display: block;
-height: 5px;
-margin: 7px 0;
-transition: all .2s ease-in-out;
+  background-color: #709d61;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
 }
 .nav-icon:hover:before {
-transform: translateY(12px) rotate(135deg);
+  transform: translateY(12px) rotate(135deg);
 }
 
 .nav-icon:hover:after {
-transform: translateY(-12px) rotate(-135deg);
+  transform: translateY(-12px) rotate(-135deg);
 }
 
 .nav-icon:hover div {
-transform: scale(0);
+  transform: scale(0);
+}
+/*............................................................................
+                              6. BODY SECTION
+.............................................................................*/
+.sub-header {
+  font-size: 35px;
+  text-align: center;
 }
 
-
-/*-------------------tab view-------------------*/
-
-@media (min-width:461px) and (max-width:990px){
-    header nav{
-        display: none;
-    }
-    .nav-icon {
-        display:initial;
-    }
-    .banner .container{
-        text-align: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-    .left {
-        order: 1;
-        padding-top: 10px;
-    }
-    .right {
-        order: 0;
-    }
-
-    h2, p,.button {
-        text-align: center;
-    }
-
-    .item-1, .item-2, .item-3, .item-4 {
-        flex: 0 100%;
-        text-align: center;
-    }
-
-    .item-5{
-        text-align: center;
-    }
-
-    .image{
-        flex: 0 48%;
-    }
-
-    .footer-list{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-main {
-        width: 100%;
-    }
-
-    .quote-image {
-        text-align: start;
-    }
+.under-heading {
+  flex: 0 50%;
+  margin-bottom: 2%;
 }
 
-/*-------------------mobile view--------------*/
-@media screen and (max-width:460px){
-    header nav{
-        display: none;
-    }
-    .nav-icon {
-        display:initial;
-    }
+.under-sub-heading {
+  flex: 1 100%;
+}
+/*-----------------------BUTTONS----------------------*/
+.contact-button {
+  background-color: #709d61;
+  border: none;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Manrope-Bold";
+}
 
-    .container{
-        margin-bottom: 20px;
-    }
+.read-button {
+  border-style: solid;
+  background-color: #ffffff;
+  border-color: #709d61;
+  color: #709d61;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Manrope-Bold";
+}
 
-    .banner .container{
-        text-align: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        
-    }
-    .left {
-        order: 1;
-        padding-top: 10px;
-    }
-    .right {
-        order: 0;
-    }
+.button-in {
+  margin: 0 auto;
+}
 
-    h2, p,.button {
-        text-align: center;
-    }
+/*<----------------------IMAGE GRIDS-------------------->*/
+.image-grid {
+  flex: 1 32%;
+  margin-bottom: 2%;
+  text-align: center;
+}
 
-    .item-1, .item-2, .item-3, .item-4 {
-        flex: 0 100%;
-        text-align: center;
-    }
+.sub-image-grid {
+  flex: 1 32%;
+  flex-grow: 0;
+  margin-bottom: 2%;
+}
 
-    .item-5{
-        flex: 0 100%;
-        text-align: center;
-    }
+.testimonial-image {
+  flex: 0 40%;
+  padding: 10px;
+}
 
-    input[type="text"] {
-        width: 300px;
-    }
+.main-image {
+  width: 100%;
+}
 
-    .quote-image {
-        display: none;
-    }
-    
+.icon-image {
+  border-radius: 50%;
+  background: #f0f1ec;
+  padding: 10px;
+}
 
-    .image{
-        flex: 0 98%;
-    }
+.sub-image {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 10px;
+}
+/*<------------------------TESTIMONIAL------------------------->*/
+.quote-img {
+  width: 40px;
+  background: #719d61;
+  padding: 5px;
+  border-radius: 50%;
+  height: 36px;
+}
 
-    .footer-list{
-        flex-direction: column;
-        text-align: center;
-    }
+.testimonial-img {
+  border-radius: 10px;
+}
 
-    .footer-main {
-        width: 100%;
-    }
+.offer-text {
+  color: #709d61;
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+}
 
-    .quote-image {
-        text-align: start;
-    }
+.about-text {
+  color: #709d61;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.service-text {
+  color: #709d61;
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.testimonial {
+  padding: 10px;
+}
+
+hr {
+  opacity: 20%;
+}
+
+.list-bold {
+  font-size: 18px;
+  font-family: "Manrope-Bold";
+}
+
+/*---------------------INPUT AND SUBSCIBE----------------*/
+
+input[type="text"] {
+  width: 500px;
+  height: 55px;
+  font-family: "Manrope-Medium";
+  padding-right: 50px;
+  border-radius: 5px;
+  border: none;
+  margin: 40px 0px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  margin-left: -110px;
+  border-radius: 5px;
+  background-color: #709d61;
+  border: none;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Manrope-Bold";
+}
+
+/*............................................................................
+                              7.FOOTER SECTION
+.............................................................................*/
+
+.day-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.footer-list {
+  font-family: "Manrope-Medium";
+  font-size: 16px;
+}
+.middle-text {
+  background-color: #f0f1ec;
+  margin: 0 auto;
+}
+
+.footer-color-change {
+  color: #709d61;
+}
+
+.footer-flex {
+  flex-direction: column;
+}
+
+.footer-width {
+  margin: 0 auto;
+  padding: 30px 0px 0px 10px;
+}
+/*............................................................................
+                              8.MEDIA QUERIES
+.............................................................................*/
+
+/*<------------------------TAB VIEW----------------------->*/
+@media (min-width: 461px) and (max-width: 990px) {
+  header nav {
+    display: none;
+  }
+  .nav-icon {
+    display: initial;
+  }
+  .banner .container {
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .left {
+    order: 1;
+    padding-top: 10px;
+  }
+  .right {
+    order: 0;
+  }
+
+  h2,
+  p,
+  .button {
+    text-align: center;
+  }
+
+  .under-heading,
+  .under-sub-heading,
+  .image-grid,
+  .sub-image-grid {
+    flex: 0 100%;
+    text-align: center;
+  }
+
+  .testimonial-image {
+    text-align: center;
+  }
+
+  .image {
+    flex: 0 48%;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-main {
+    width: 100%;
+  }
+
+  .quote-image {
+    text-align: start;
+  }
+}
+
+/*<--------------------------MOBILE VIEW------------------------>*/
+@media screen and (max-width: 460px) {
+  header nav {
+    display: none;
+  }
+  .nav-icon {
+    display: initial;
+  }
+
+  .container {
+    margin-bottom: 20px;
+  }
+
+  .banner .container {
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .left {
+    order: 1;
+    padding-top: 10px;
+  }
+  .right {
+    order: 0;
+  }
+
+  h2,
+  p,
+  .button {
+    text-align: center;
+  }
+
+  .under-heading,
+  .under-sub-heading,
+  .image-grid,
+  .sub-image-grid {
+    flex: 0 100%;
+    text-align: center;
+  }
+
+  .testimonial-image {
+    flex: 0 100%;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 300px;
+  }
+
+  .quote-image {
+    display: none;
+  }
+
+  .image {
+    flex: 0 98%;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-main {
+    width: 100%;
+  }
+
+  .quote-image {
+    text-align: start;
+  }
 }
