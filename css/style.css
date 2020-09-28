@@ -399,10 +399,9 @@ html input[disabled] {
 input[type="checkbox"],
 input[type="radio"] {
   /*box-sizing: border-box;  1 */
-  /*  padding: 0;  2 */
-  /*height: 13px;  3 */
-  /*width: 13px;  3 */
-
+/*  padding: 0;  2 */
+/*height: 13px;  3 */
+/*width: 13px;  3 */
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -583,7 +582,8 @@ h5 {
   color: #000000;
 }
 
-h6 {
+h6,
+.footer-bottom {
   font-size: 14px;
   font-family: "Manrope-Medium";
   margin: 0 auto;
